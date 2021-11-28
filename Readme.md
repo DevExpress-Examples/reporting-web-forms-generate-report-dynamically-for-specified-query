@@ -1,29 +1,32 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128600472/15.1.9%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E889)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
+# Reporting for WebForms - How to Dynamically Generate a Report for a Table or Query
+
+This example demonstrates how to use the Web Document Viewer to display the results of the SQL query in the form of a report. The data source query name is specified in the URL query string.
+
+![Web Forms - a Report Generated for a Query](Images/screenshot.png)
+In this example the [XRTable](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable) control in a report is created at runtime based on the query results. The query is created at runtime for the specified table. The user specifies the table name in the URL query string. 
+
+In the XtraReport code-behind, the [SqlDataSource](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Sql.SqlDataSource) instance is created and populated with data retrieved from the SQL query. The XRTable control is created in code, with table cells bound to the data table columns.
+
+The project uses the SQLite database with Northwind data.
+
 <!-- default file list -->
-*Files to look at*:
 
-* [XtraReport1.cs](./CS/WebSite/App_Code/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/WebSite/App_Code/XtraReport1.vb))
-* [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
+## Files to Look At
+
+- [Default.aspx.cs](CS/WebSite/Default.aspx.cs) ([Default.aspx.vb](VB/WebSite/Default.aspx.vb))
+- [XtraReport1.cs](CS/WebSite/App_Code/XtraReport1.cs) ([XtraReport1.vb](VB/WebSite/App_Code/XtraReport1.vb))
+
 <!-- default file list end -->
-# How to dynamically generate a report with a parameterized SQL query as a data source
 
-<strong>Description</strong>:
+## Documentation
 
-I need a web report viewer to display the result of my SQL query, which accepts some parameters.
+- [Create Reports in Code](https://docs.devexpress.com/XtraReports/115726/detailed-guide-to-devexpress-reporting/reporting-api/create-reports-in-code)
+- [Bind a Report to a Microsoft SQL Server Database at Runtime](https://docs.devexpress.com/XtraReports/4793/detailed-guide-to-devexpress-reporting/bind-reports-to-data/sql-database/bind-a-report-to-a-microsoft-sql-server-database-runtime-sample)
+- [Standard .NET Providers](https://docs.devexpress.com/XtraReports/1181/detailed-guide-to-devexpress-reporting/bind-reports-to-data/standard-net-data-providers)
+- [ASP.NET Web Forms Reporting](https://docs.devexpress.com/XtraReports/400245/web-reporting/asp-net-webforms-reporting)
 
-<strong>Solution</strong>:
+## More Examples
 
-Create an <a href="https://documentation.devexpress.com/#XtraReports/clsDevExpressXtraReportsUIXRTabletopic">XRTable</a> control dynamically.
-
-Use a query string variable to pass the table name as a query parameter, as follows:
-  
-`href="http://hostname/PassSQLQuery/ReportViewer.aspx?TableName=Customers`
-
-The XtraReport code-behind method populates the data source with data retrieved from the SQL query. The XRTable control is created in code. Table cells are bound to the column names of the data table.
+- [How to Generate a Report at Runtime in an ASP.NET MVC Application](https://github.com/DevExpress-Examples/reporting-create-report-at-runtime-aspnet-mvc)
 
 
