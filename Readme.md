@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128600472/21.2.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E889)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting for WebForms - How to Dynamically Generate a Report for a Table or Query
 
 This example demonstrates how to use the Web Document Viewer to display the results of the SQL query in the form of a report. The data source query name is specified in the URL query string.
@@ -19,8 +14,8 @@ The project uses the SQLite database with Northwind data.
 
 ## Files to Look At
 
-- [Default.aspx.cs](CS/WebSite/Default.aspx.cs) ([Default.aspx.vb](VB/WebSite/Default.aspx.vb))
-- [XtraReport1.cs](CS/WebSite/App_Code/XtraReport1.cs) ([XtraReport1.vb](VB/WebSite/App_Code/XtraReport1.vb))
+- [HomeController.cs](CS/ReportForQueryExample/Controllers/HomeController.cs) ([HomeController.vb](VB/ReportForQueryExample/Controllers/HomeController.vb))
+- [TestReport.cs](CS/ReportForQueryExample/PredefinedReports/TestReport.cs) ([TestReport.vb](VB/ReportForQueryExample/PredefinedReports/TestReport.vb))
 
 <!-- default file list end -->
 
@@ -29,7 +24,7 @@ The project uses the SQLite database with Northwind data.
 - [Create Reports in Code](https://docs.devexpress.com/XtraReports/115726/detailed-guide-to-devexpress-reporting/reporting-api/create-reports-in-code)
 - [Bind a Report to a Microsoft SQL Server Database at Runtime](https://docs.devexpress.com/XtraReports/4793/detailed-guide-to-devexpress-reporting/bind-reports-to-data/sql-database/bind-a-report-to-a-microsoft-sql-server-database-runtime-sample)
 - [Standard .NET Providers](https://docs.devexpress.com/XtraReports/1181/detailed-guide-to-devexpress-reporting/bind-reports-to-data/standard-net-data-providers)
-- [ASP.NET Web Forms Reporting](https://docs.devexpress.com/XtraReports/400245/web-reporting/asp-net-webforms-reporting)
+- [ASP.NET MVC Reporting](https://docs.devexpress.com/XtraReports/400247/web-reporting/asp-net-mvc-reporting)
 
 ## More Examples
 
