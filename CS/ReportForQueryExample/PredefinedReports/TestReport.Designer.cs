@@ -56,7 +56,7 @@ partial class TestReport
         this.PageHeight = 800;
         this.PageWidth = 1200;
         this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
-        this.Font = new System.Drawing.Font("Arial", 9.75F);
+        this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
         this.Version = "21.2";
         ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

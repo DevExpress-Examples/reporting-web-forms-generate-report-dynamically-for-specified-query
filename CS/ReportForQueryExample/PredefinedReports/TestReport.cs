@@ -39,7 +39,7 @@ public partial class TestReport : DevExpress.XtraReports.UI.XtraReport
         if (rowCount > 0)
         {
             int padding = 10;
-            int tableWidth = this.PageWidth - this.Margins.Left - this.Margins.Right - padding * 2;
+            int tableWidth = Convert.ToInt32(this.PageWidth - this.Margins.Left - this.Margins.Right - padding * 2);
 
             XRTable dynamicTable = XRTable.CreateTable(
                                 new Rectangle(padding,    // rect X

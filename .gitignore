@@ -21,6 +21,7 @@ x64/
 x86/
 bld/
 [Oo]bj/
+[Bb]in/
 [Ll]og/
 
 # Visual Studio 2015 cache/options directory
@@ -295,3 +296,8 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+ 
+# ProjectUpdrade & TryConvert files
+*.csproj.old
+*.vbproj.old
+*.bak

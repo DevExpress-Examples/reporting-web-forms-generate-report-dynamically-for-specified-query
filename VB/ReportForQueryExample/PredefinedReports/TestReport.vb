@@ -30,7 +30,7 @@ Partial Public Class TestReport
 
         If rowCount > 0 Then
             Dim padding = 10
-            Dim tableWidth = PageWidth - Margins.Left - Margins.Right - padding * 2
+            Dim tableWidth = Convert.ToInt32(PageWidth - Margins.Left - Margins.Right - padding * 2)
             Dim dynamicTable As XRTable = XRTable.CreateTable(New Rectangle(padding, 2, tableWidth, 40), 1, 0)
             dynamicTable.Width = tableWidth
             dynamicTable.Rows.FirstRow.Width = tableWidth
