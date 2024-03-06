@@ -40,10 +40,10 @@ Partial Public Class TestReport
         'TestReport
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.TopMargin, Me.BottomMargin, Me.Detail})
-        Me.Font = New DevExpress.Drawing.DXFont("Arial", 9.75!)
+        Me.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.PageHeight = 800
         Me.PageWidth = 1200
-        Me.PaperKind = System.Drawing.Printing.PaperKind.Custom
+        Me.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom
         Me.Version = "21.2"
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 

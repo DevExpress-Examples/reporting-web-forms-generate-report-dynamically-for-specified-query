@@ -34,5 +34,3 @@ The project uses the SQLite database with Northwind data.
 ## More Examples
 
 - [How to Generate a Report at Runtime in an ASP.NET MVC Application](https://github.com/DevExpress-Examples/reporting-create-report-at-runtime-aspnet-mvc)
-
-
