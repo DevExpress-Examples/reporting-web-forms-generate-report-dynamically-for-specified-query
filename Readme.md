@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E889)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Reporting for WebForms - How to Dynamically Generate a Report for a Table or Query
+# Reporting for ASP.NET Web Forms - How to Dynamically Generate a Report for a Table or Query
 
 This example demonstrates how to use the Web Document Viewer to display the results of the SQL query in the form of a report. The data source query name is specified in the URL query string.
 
@@ -17,7 +17,7 @@ The project uses the SQLite database with Northwind data.
 
 <!-- default file list -->
 
-## Files to Look At
+## Files to Review
 
 - [HomeController.cs](CS/ReportForQueryExample/Controllers/HomeController.cs) ([HomeController.vb](VB/ReportForQueryExample/Controllers/HomeController.vb))
 - [TestReport.cs](CS/ReportForQueryExample/PredefinedReports/TestReport.cs) ([TestReport.vb](VB/ReportForQueryExample/PredefinedReports/TestReport.vb))
